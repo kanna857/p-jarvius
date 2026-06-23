@@ -1,0 +1,39 @@
+# ── Core ─────────────────────────────────────────
+openai>=1.30.0
+python-dotenv>=1.0.0
+
+# ── Voice Input (STT) ─────────────────────────────────────────
+SpeechRecognition>=3.10.0
+PyAudio>=0.2.14          # pip install pipwin && pipwin install pyaudio
+faster-whisper>=1.0.0    # 🎤 PRIMARY: Offline Whisper STT (high accuracy, CPU/GPU)
+vosk>=0.3.45             # 🎤 FALLBACK: Lightweight offline STT
+
+# ── Voice Output (TTS) ────────────────────────────────────────
+edge-tts>=6.1.0          # 🔊 PRIMARY: Microsoft neural voices (free, natural-sounding)
+pyttsx3>=2.90            # 🔊 FALLBACK: Offline Windows SAPI voices
+elevenlabs>=1.5.0        # 🔊 PREMIUM: ElevenLabs cloud voice (optional)
+pygame>=2.5.0            # needed for edge-tts and ElevenLabs audio playback
+
+# ── System Tray ───────────────────────────────────
+pystray>=0.19.5
+Pillow>=10.0.0           # icon rendering
+
+# ── Vision ────────────────────────────────────────
+opencv-python>=4.9.0
+mediapipe>=0.10.0
+ultralytics>=8.2.0       # YOLOv8 (downloads model on first use)
+pytesseract>=0.3.10      # also install Tesseract binary from GitHub
+pyautogui>=0.9.54        # screenshot capture
+
+# ── PC Automation ─────────────────────────────────
+pyautogui>=0.9.54
+keyboard>=0.13.5
+
+# ── Browser (headless) ────────────────────────────
+selenium>=4.21.0
+webdriver-manager>=4.0.0
+
+# ── Web requests ─────────────────────────────────
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+duckduckgo-search>=5.0.0
